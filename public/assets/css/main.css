@@ -34,7 +34,7 @@ html {
   border-radius: 5px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.15);
   margin: 10% auto;
-  
+
 }
 .signup .title{
   font-size: 25px;
@@ -122,8 +122,8 @@ form .input-box span.details{
  form .button input:hover{
   background-color: #0056b3;
  }
- 
- 
+
+
  @media(max-width: 584px){
  .container{
   max-width: 100%;
@@ -147,7 +147,7 @@ form .user-details .input-box{
   .container .content .category{
     flex-direction: column;
   }
-} 
+}
 /*end signup*--------------------------------------------------------------------------------------/
 
 /* sign in */
@@ -278,7 +278,7 @@ h1 {
 
 #create-account-btn:hover {
   background-color: #0056b3;
-  
+
 }
 #create-account-btn{
   padding: 10px 20px;
@@ -306,7 +306,7 @@ h1 {
   max-width: 800px;
   margin: 50px auto;
   padding: 20px;
- 
+
 }
 
 
@@ -547,9 +547,8 @@ h1 {
 
 .freelancers {
   position: absolute;
- left: 10px;
-  width: 150px; /* Adjust width of freelancer column */
- 
+  left: 10px;
+  width: 200px; /* Adjust width of freelancer column */
   padding-right: 20px; /* Add some padding to separate the border from content */
 }
 
@@ -632,9 +631,9 @@ h1 {
 }
 .vertical-line {
   position: absolute;
-  top: 0;
+  top: 70px;
   bottom: 0;
-  left: calc(150px + 20px); /* Adjust based on width and padding of .freelancers */
+  left: calc(200px + 20px); /* Adjust based on width and padding of .freelancers */
   width: 1px;
   background-color: black;
 }
@@ -666,7 +665,7 @@ h1 {
 
 h1 {
   font-size: 24px;
-  
+
 }
 
 .step {
@@ -789,41 +788,41 @@ h1 {
   }
    /* end job des */
 
-  
+
 /* start portfolio   */
   .portfolio {
     max-width: 800px;
     margin: 50px auto;
     padding: 20px;
   }
-  
+
   .portfolio header {
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .portfolio header h1 {
     font-size: 36px;
   }
-  
+
   .portfolio header p {
     font-size: 18px;
     color: #555;
   }
-  
+
   .project {
     margin-bottom: 40px;
   }
-  
+
   .project h2 {
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
+
   .project p {
     margin-bottom: 20px;
   }
-  
+
   .project img {
     display: block;
     max-width: 100%;
@@ -841,20 +840,20 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 8px;
   }
-  
+
   .project-form h2 {
     text-align: center;
     margin-bottom: 20px;
   }
-  
+
   .form-group {
     margin-bottom: 20px;
   }
-  
+
   label {
     font-weight: bold;
   }
-  
+
   input[type="file"],
   textarea,
   select {
@@ -863,7 +862,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+
   button {
     padding: 10px 20px;
     font-size: 16px;
@@ -874,7 +873,7 @@ h1 {
     color: #fff;
     transition: background-color 0.3s;
   }
-  
+
   button:hover {
     background-color: #0056b3;
   }

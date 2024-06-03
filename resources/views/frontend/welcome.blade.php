@@ -9,7 +9,18 @@
         <p>
           Connect, collaborate, and succeed on a platform designed for the modern professional.
         </p>
-
+        <form action="{{ route('start_chat') }}" method="POST">
+            @csrf
+            @if(Auth::check())
+                @if (Auth::user()->email=="youssefshaaban.8000@gmail.com")
+                <input type="hidden" name="receiveEmail" value="youssefamr.8000@gmail.com">
+                <button type="submit">Start Chat</button>
+                @else
+                <input type="hidden" name="receiveEmail" value="youssefshaaban.8000@gmail.com">
+                <button type="submit">Start Chat</button>
+                @endif
+            @endif
+        </form>
         <button>GET STARTED FOR FREE</button>
       </div>
       <div class="column-right">

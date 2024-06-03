@@ -18,12 +18,16 @@
       <body>
   <!-- ======= Header ======= -->
   <nav>
-    <div class="logo">Workspace</div>
+    <div class="logo"><a href="/" class="logo">Workspace</a></div>
     <div class="nav-items">
-      <a href="/">Find Freelancers</a>
-       <a href="/">Find Clients</a>
+        <a href="/">Find Freelancers</a>
+        <a href="/">Find Clients</a>
         <a href="/">Why Workspace</a>
-
+        @guest
+            <a  href="/login">Login</a>
+        @else
+            <a  href="{{ route('logout') }}">Logout</a>
+    @endguest
     </div>
   </nav>
   <!-- End Header -->

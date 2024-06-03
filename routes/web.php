@@ -19,3 +19,11 @@ Route::post('validate_registration_freelancer', [App\Http\Controllers\Auth\AuthC
 Route::post('validate_login', [App\Http\Controllers\Auth\AuthController::class,'validate_login'])->name('sample.validate_login');
 
 ##########################################################################################################
+
+Route::get('chat', [App\Http\Controllers\MessageController::class,'startChat'])->name('start_chat');
+Route::post('chat', [App\Http\Controllers\MessageController::class,'startChat'])->name('start_chat');
+Route::get('chats', [App\Http\Controllers\MessageController::class, 'index'])->name('chats.index');
+Route::get('chat/{email}', [App\Http\Controllers\MessageController::class, 'create'])->name('chats.create');
+Route::post('chat/{email}', [App\Http\Controllers\MessageController::class, 'store'])->name('chats.store');
+
+##########################################################################################################
