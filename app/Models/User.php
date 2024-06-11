@@ -10,6 +10,11 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use HasFactory, Notifiable;
+    public function projects()
+    {
+        return $this->hasMany(Project::class, 'creator_id');
+    }
+  
 
     protected $fillable = [
         'name',
